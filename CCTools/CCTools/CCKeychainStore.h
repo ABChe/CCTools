@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CCKeychainStore : NSObject
+extern NSString *const CCKeychainStoreInsteadUUIDKey;
 
+@interface CCKeychainStore : NSObject
 
 /**
  将 UUID 存入 keychain 来实现设备唯一标识符的效果
@@ -17,7 +18,11 @@
  */
 + (NSString *)getDeviceID;
 
+/**
+ 删除设备ID
 
-+ (void)delete:(NSString *)service;
+ @param insteadUUIDKey CCKeychainStoreInsteadUUIDKey
+ */
++ (void)deleteDeviceID:(NSString *)insteadUUIDKey;
 
 @end

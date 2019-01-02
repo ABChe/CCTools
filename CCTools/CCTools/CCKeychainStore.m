@@ -9,12 +9,12 @@
 #import "CCKeychainStore.h"
 #import <Security/Security.h>
 
-NSString * const KEY_UDID_INSTEAD = @"com.cctools.test";
+NSString *const CCKeychainStoreInsteadUUIDKey = @"com.cctools.test";
 
 @implementation CCKeychainStore
 
 + (NSString *)getDeviceID {
-    NSString *getUDIDInKeychain = (NSString *)[CCKeychainStore load:KEY_UDID_INSTEAD];
+    NSString *getUDIDInKeychain = (NSString *)[CCKeychainStore load:CCKeychainStoreInsteadUUIDKey];
     NSLog(@"\n \n -------   CCKeychainStore获取到的UUID: %@  ------- \n",getUDIDInKeychain);
     if (!getUDIDInKeychain ||[getUDIDInKeychain isEqualToString:@""]||[getUDIDInKeychain isKindOfClass:[NSNull class]]) {
         CFUUIDRef puuid = CFUUIDCreate( nil );
@@ -23,8 +23,8 @@ NSString * const KEY_UDID_INSTEAD = @"com.cctools.test";
         CFRelease(puuid);
         CFRelease(uuidString);
         NSLog(@"\n \n -------  CCKeychainStore重新存储UUID: %@  ------- \n",result);
-        [CCKeychainStore save:KEY_UDID_INSTEAD data:result];
-        getUDIDInKeychain = (NSString *)[CCKeychainStore load:KEY_UDID_INSTEAD];
+        [CCKeychainStore save:CCKeychainStoreInsteadUUIDKey data:result];
+        getUDIDInKeychain = (NSString *)[CCKeychainStore load:CCKeychainStoreInsteadUUIDKey];
     }
     NSLog(@"\n \n -------   CCKeychainStore获取的DeviceID: %@  ------- \n",getUDIDInKeychain);
     return getUDIDInKeychain;
@@ -62,7 +62,7 @@ NSString * const KEY_UDID_INSTEAD = @"com.cctools.test";
         @try {
             ret = [NSKeyedUnarchiver unarchiveObjectWithData:(__bridge NSData *)keyData];
         } @catch (NSException *e) {
-            NSLog(@"Unarchive of %@ failed: %@", service, e);
+            NSLog(@"\n \n ------- unarchive of %@ failed: %@ ------- \n", service, e);
         } @finally {
         }
     }
@@ -71,8 +71,8 @@ NSString * const KEY_UDID_INSTEAD = @"com.cctools.test";
     return ret;
 }
 
-+ (void)delete:(NSString *)service {
-    NSMutableDictionary *keychainQuery = [self getKeychainQuery:service];
++ (void)deleteDeviceID:(NSString *)insteadUUIDKey {
+    NSMutableDictionary *keychainQuery = [self getKeychainQuery:insteadUUIDKey];
     SecItemDelete((CFDictionaryRef)keychainQuery);
     NSLog(@"\n \n -------  CCKeychainStore清除DeviceID成功  ------- \n");
 }
