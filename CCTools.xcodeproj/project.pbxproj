@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F205852921DDAC4800082C82 /* CCDecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = F205852821DDAC4800082C82 /* CCDecimalNumber.m */; };
 		F27168E121B96167004EAD2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F27168E021B96167004EAD2A /* AppDelegate.m */; };
 		F27168E421B96167004EAD2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27168E321B96167004EAD2A /* ViewController.m */; };
 		F27168E721B96167004EAD2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F27168E521B96167004EAD2A /* Main.storyboard */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F205852721DDAC4800082C82 /* CCDecimalNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCDecimalNumber.h; sourceTree = "<group>"; };
+		F205852821DDAC4800082C82 /* CCDecimalNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCDecimalNumber.m; sourceTree = "<group>"; };
 		F27168DC21B96167004EAD2A /* CCTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27168DF21B96167004EAD2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F27168E021B96167004EAD2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -141,6 +144,8 @@
 			children = (
 				F271691521B9668B004EAD2A /* CCKeychainStore.h */,
 				F271691621B9668B004EAD2A /* CCKeychainStore.m */,
+				F205852721DDAC4800082C82 /* CCDecimalNumber.h */,
+				F205852821DDAC4800082C82 /* CCDecimalNumber.m */,
 			);
 			path = CCTools;
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F205852921DDAC4800082C82 /* CCDecimalNumber.m in Sources */,
 				F27168E421B96167004EAD2A /* ViewController.m in Sources */,
 				F27168EF21B96168004EAD2A /* main.m in Sources */,
 				F27168E121B96167004EAD2A /* AppDelegate.m in Sources */,

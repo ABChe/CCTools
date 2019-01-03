@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CCKeychainStore.h"
+#import "CCDecimalNumber.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
 }
 
 @end
