@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F205852921DDAC4800082C82 /* CCDecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = F205852821DDAC4800082C82 /* CCDecimalNumber.m */; };
+		F26A7EA621F219B400A774F4 /* CCtools.h in Sources */ = {isa = PBXBuildFile; fileRef = F26A7EA521F2198200A774F4 /* CCtools.h */; };
 		F27168E121B96167004EAD2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F27168E021B96167004EAD2A /* AppDelegate.m */; };
 		F27168E421B96167004EAD2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27168E321B96167004EAD2A /* ViewController.m */; };
 		F27168E721B96167004EAD2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F27168E521B96167004EAD2A /* Main.storyboard */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		F205852721DDAC4800082C82 /* CCDecimalNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCDecimalNumber.h; sourceTree = "<group>"; };
 		F205852821DDAC4800082C82 /* CCDecimalNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCDecimalNumber.m; sourceTree = "<group>"; };
+		F26A7EA121F217E800A774F4 /* AdaptiveScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdaptiveScreen.h; sourceTree = "<group>"; };
+		F26A7EA521F2198200A774F4 /* CCtools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCtools.h; sourceTree = "<group>"; };
 		F27168DC21B96167004EAD2A /* CCTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27168DF21B96167004EAD2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F27168E021B96167004EAD2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -142,6 +145,8 @@
 		F271691121B96186004EAD2A /* CCTools */ = {
 			isa = PBXGroup;
 			children = (
+				F26A7EA521F2198200A774F4 /* CCtools.h */,
+				F26A7EA121F217E800A774F4 /* AdaptiveScreen.h */,
 				F271691521B9668B004EAD2A /* CCKeychainStore.h */,
 				F271691621B9668B004EAD2A /* CCKeychainStore.m */,
 				F205852721DDAC4800082C82 /* CCDecimalNumber.h */,
@@ -280,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F26A7EA621F219B400A774F4 /* CCtools.h in Sources */,
 				F205852921DDAC4800082C82 /* CCDecimalNumber.m in Sources */,
 				F27168E421B96167004EAD2A /* ViewController.m in Sources */,
 				F27168EF21B96168004EAD2A /* main.m in Sources */,
