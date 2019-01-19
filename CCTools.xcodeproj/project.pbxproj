@@ -18,6 +18,7 @@
 		F27168F921B96168004EAD2A /* CCToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F27168F821B96168004EAD2A /* CCToolsTests.m */; };
 		F271690421B96169004EAD2A /* CCToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F271690321B96169004EAD2A /* CCToolsUITests.m */; };
 		F271691721B9668B004EAD2A /* CCKeychainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F271691621B9668B004EAD2A /* CCKeychainStore.m */; };
+		F2E106A921F3634C0016963C /* UIImage+CCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E106A821F3634C0016963C /* UIImage+CCAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		F271690521B96169004EAD2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F271691521B9668B004EAD2A /* CCKeychainStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCKeychainStore.h; sourceTree = "<group>"; };
 		F271691621B9668B004EAD2A /* CCKeychainStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCKeychainStore.m; sourceTree = "<group>"; };
+		F2E106A721F3634C0016963C /* UIImage+CCAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+CCAdd.h"; sourceTree = "<group>"; };
+		F2E106A821F3634C0016963C /* UIImage+CCAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CCAdd.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,8 +154,18 @@
 				F271691621B9668B004EAD2A /* CCKeychainStore.m */,
 				F205852721DDAC4800082C82 /* CCDecimalNumber.h */,
 				F205852821DDAC4800082C82 /* CCDecimalNumber.m */,
+				F2E106A621F362C40016963C /* Category */,
 			);
 			path = CCTools;
+			sourceTree = "<group>";
+		};
+		F2E106A621F362C40016963C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F2E106A721F3634C0016963C /* UIImage+CCAdd.h */,
+				F2E106A821F3634C0016963C /* UIImage+CCAdd.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +301,7 @@
 				F26A7EA621F219B400A774F4 /* CCtools.h in Sources */,
 				F205852921DDAC4800082C82 /* CCDecimalNumber.m in Sources */,
 				F27168E421B96167004EAD2A /* ViewController.m in Sources */,
+				F2E106A921F3634C0016963C /* UIImage+CCAdd.m in Sources */,
 				F27168EF21B96168004EAD2A /* main.m in Sources */,
 				F27168E121B96167004EAD2A /* AppDelegate.m in Sources */,
 				F271691721B9668B004EAD2A /* CCKeychainStore.m in Sources */,
