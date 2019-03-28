@@ -52,4 +52,54 @@
     }
     return targetImageData;
 }
+
+- (NSData *)compressToJPEGFormatDataWithTargetSize:(NSInteger)targetSize rangeSize:(NSInteger)rangeSize maxTry:(NSInteger)maxTry {
+    NSData *originalData = UIImageJPEGRepresentation(self, 1);
+    
+    if (originalData.length <= targetSize) return originalData;
+    
+    CGFloat targetCompressionQuality = [self getTargetCompressionQualityWithTargetSize:targetSize
+                                                                             rangeSize:rangeSize
+                                                                                maxTry:maxTry];
+    NSData *data = UIImageJPEGRepresentation(self, targetCompressionQuality);
+    return data;
+}
+
+- (CGFloat)getTargetCompressionQualityWithTargetSize:(NSInteger)targetSize rangeSize:(NSInteger)rangeSize maxTry:(NSInteger)maxTry
+{
+    CGFloat minCompressionQuality = 0;
+    CGFloat maxCompressionQuality = 1;
+    CGFloat currentCompressionQuality = 0;
+    
+    for (int i = 0; i < maxTry; i++) {
+        @autoreleasepool
+        {
+            CGFloat middle = (minCompressionQuality + maxCompressionQuality) / 2;
+            if (currentCompressionQuality == middle) {
+                return currentCompressionQuality;
+            } else {
+                currentCompressionQuality = middle;
+            }
+            
+            NSData *currentData = UIImageJPEGRepresentation(self, currentCompressionQuality);
+            CGFloat range = fabs(currentData.length - (CGFloat)targetSize);
+
+            if (range <= rangeSize) {
+                return currentCompressionQuality;
+            }
+            
+            if (currentData.length > targetSize) {
+                maxCompressionQuality = currentCompressionQuality;
+            } else {
+                minCompressionQuality = currentCompressionQuality;
+            }
+            
+            if (i == maxTry - 1) {
+                return currentCompressionQuality;
+            }
+        }
+    }
+    return 0.f;
+}
+
 @end

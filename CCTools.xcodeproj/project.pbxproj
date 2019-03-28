@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F205852921DDAC4800082C82 /* CCDecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = F205852821DDAC4800082C82 /* CCDecimalNumber.m */; };
+		F20E940922451F8D00CB85B6 /* test1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F20E940822451F8D00CB85B6 /* test1.jpg */; };
 		F26A7EA621F219B400A774F4 /* CCtools.h in Sources */ = {isa = PBXBuildFile; fileRef = F26A7EA521F2198200A774F4 /* CCtools.h */; };
 		F27168E121B96167004EAD2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F27168E021B96167004EAD2A /* AppDelegate.m */; };
 		F27168E421B96167004EAD2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27168E321B96167004EAD2A /* ViewController.m */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		F205852721DDAC4800082C82 /* CCDecimalNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCDecimalNumber.h; sourceTree = "<group>"; };
 		F205852821DDAC4800082C82 /* CCDecimalNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCDecimalNumber.m; sourceTree = "<group>"; };
+		F20E940822451F8D00CB85B6 /* test1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test1.jpg; sourceTree = "<group>"; };
 		F26A7EA121F217E800A774F4 /* AdaptiveScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdaptiveScreen.h; sourceTree = "<group>"; };
 		F26A7EA521F2198200A774F4 /* CCtools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCtools.h; sourceTree = "<group>"; };
 		F27168DC21B96167004EAD2A /* CCTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +122,7 @@
 				F27168E321B96167004EAD2A /* ViewController.m */,
 				F27168E521B96167004EAD2A /* Main.storyboard */,
 				F27168E821B96168004EAD2A /* Assets.xcassets */,
+				F20E940822451F8D00CB85B6 /* test1.jpg */,
 				F27168EA21B96168004EAD2A /* LaunchScreen.storyboard */,
 				F27168ED21B96168004EAD2A /* Info.plist */,
 				F27168EE21B96168004EAD2A /* main.m */,
@@ -273,6 +276,7 @@
 			files = (
 				F27168EC21B96168004EAD2A /* LaunchScreen.storyboard in Resources */,
 				F27168E921B96168004EAD2A /* Assets.xcassets in Resources */,
+				F20E940922451F8D00CB85B6 /* test1.jpg in Resources */,
 				F27168E721B96167004EAD2A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

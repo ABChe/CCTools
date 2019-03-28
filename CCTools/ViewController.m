@@ -10,6 +10,7 @@
 #import "CCKeychainStore.h"
 #import "CCDecimalNumber.h"
 #import "CCtools.h"
+#import "UIImage+CCAdd.h"
 
 @interface ViewController ()
 
@@ -19,8 +20,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    kiPhoneXAlll;
 }
 
 @end

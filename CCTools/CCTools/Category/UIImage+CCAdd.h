@@ -20,4 +20,6 @@
  */
 - (NSData *)compressToJPEGFormatDataWithFactor:(CGFloat)factor maxFielSize:(u_int64_t)fileSize;
 
+- (NSData *)compressToJPEGFormatDataWithTargetSize:(NSInteger)targetSize rangeSize:(NSInteger)rangeSize maxTry:(NSInteger)maxTry;
+
 @end
